@@ -68,7 +68,7 @@ contract SupplyChain {
     _;
   }
 
-  // Define a modifer that verifies the Caller
+  // Define a modifer that verifies the Caller32
   modifier verifyCaller (address _address) {
     require(msg.sender == _address); 
     _;

@@ -1,7 +1,7 @@
 {
   "name": "supply-chain-E",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Blockchain Supply Chain CoffeeTrade",
   "main": "index.js",
   "scripts": {
     "dev": "lite-server",
