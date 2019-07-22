@@ -1,4 +1,4 @@
-# Coffee Beans Supply Chain - thereum Blockchain
+# Blockchain Supply Chain Solution
 
 ## Description
 
@@ -15,16 +15,25 @@ This document uses UML to describre the general structure and functions that thi
 
 This diagram shows the different actors and the interactions with the system.
 
+![Activity Diagram](https://github.com/axelgalicia/blockchain-supply-chain/tree/master/project-6/images/activity_diagram_final.png)
+
 
 # Sequence Diagram
 
 This diagram shows the communication between the different objects and their life cycle.
 
+![Sequence Diagram](https://github.com/axelgalicia/blockchain-supply-chain/tree/master/project-6/images/sequence_diagram3.png)
+
 # State Diagram
 
 This diagram shows the different states of each object and the events or conditions that change those states.
 
+![State Diagram](https://github.com/axelgalicia/blockchain-supply-chain/tree/master/project-6/images/state_diagram_final.png)
+
 # Data Modeling Diagram
 
+This diagram shows the different Smart Contracts and the relation between them
+
+![Data Modeling Diagram](https://github.com/axelgalicia/blockchain-supply-chain/tree/master/project-6/images/data_modeling_diagram.png)
 
 
