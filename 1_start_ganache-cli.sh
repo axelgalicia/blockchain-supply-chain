@@ -1,1 +1,1 @@
-ganache-cli -m "spirit supply whale amount human item harsh scare congress discover talent hamster"
+ganache-cli -m "siege disagree message lake agree between walk confirm engage survey chicken become"

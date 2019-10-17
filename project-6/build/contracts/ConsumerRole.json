@@ -50,15 +50,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addConsumer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceConsumer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isConsumer\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/AXEL/Personal/Tutorials/suply_chain/project-6/contracts/coffeeaccesscontrol/ConsumerRole.sol\":\"ConsumerRole\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/AXEL/Personal/Tutorials/suply_chain/project-6/contracts/coffeeaccesscontrol/ConsumerRole.sol\":{\"keccak256\":\"0x9a233ca5ba0fb4129111104d71c6e97f5fa924d2c3a6e52d0e8dee150863ae69\",\"urls\":[\"bzzr://c2f6a855518ce7e063996b57928bf32b64cce3f71375931af03e931280ba5105\"]},\"/D/AXEL/Personal/Tutorials/suply_chain/project-6/contracts/coffeeaccesscontrol/Roles.sol\":{\"keccak256\":\"0x7c2ab57b6ce744d135829edb2902c327c1a25933d77142f6eb7dcc1f55271e07\",\"urls\":[\"bzzr://30ff78993a0cc8dab5e611e7f13f3bbd129e6b354abbac9d10eb27fdce17e677\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5061011b806100206000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063112940f914604157806361e6982d146082578063834ff73914608a575b600080fd5b608060048036036020811015605557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e3565b005b608860e6565b005b60c960048036036020811015609e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e8565b604051808215151515815260200191505060405180910390f35b50565b565b600091905056fea165627a7a723058204d868f0cb7696066de55dedaa5a475ceda0060cfa9d0ae2c5e0eca1c6bec859e0029",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063112940f914604157806361e6982d146082578063834ff73914608a575b600080fd5b608060048036036020811015605557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e3565b005b608860e6565b005b60c960048036036020811015609e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e8565b604051808215151515815260200191505060405180910390f35b50565b565b600091905056fea165627a7a723058204d868f0cb7696066de55dedaa5a475ceda0060cfa9d0ae2c5e0eca1c6bec859e0029",
-  "sourceMap": "161:1147:1:-;;;424:33;8:9:-1;5:2;;;30:1;27;20:12;5:2;424:33:1;161:1147;;;;;;",
-  "deployedSourceMap": "161:1147:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;161:1147:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;791:70;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;791:70:1;;;;;;;;;;;;;;;;;;;:::i;:::-;;932:47;;;:::i;:::-;;651:76;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;651:76:1;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;791:70;;:::o;932:47::-;:::o;651:76::-;709:4;651:76;;;:::o",
-  "source": "pragma solidity ^0.5.8;\r\n\r\n// Import the library 'Roles'\r\nimport \"./Roles.sol\";\r\n\r\n// Define a contract 'ConsumerRole' to manage this role - add, remove, check\r\ncontract ConsumerRole {\r\n\r\n  // Define 2 events, one for Adding, and other for Removing\r\n\r\n  // Define a struct 'consumers' by inheriting from 'Roles' library, struct Role\r\n\r\n  // In the constructor make the address that deploys this contract the 1st consumer\r\n  constructor() public {\r\n    \r\n  }\r\n\r\n  // Define a modifier that checks to see if msg.sender has the appropriate role\r\n  modifier onlyConsumer() {\r\n    \r\n    _;\r\n  }\r\n\r\n  // Define a function 'isConsumer' to check this role\r\n  function isConsumer(address account) public view returns (bool) {\r\n    \r\n  }\r\n\r\n  // Define a function 'addConsumer' that adds this role\r\n  function addConsumer(address account) public onlyConsumer {\r\n    \r\n  }\r\n\r\n  // Define a function 'renounceConsumer' to renounce this role\r\n  function renounceConsumer() public {\r\n    \r\n  }\r\n\r\n  // Define an internal function '_addConsumer' to add this role, called by 'addConsumer'\r\n  function _addConsumer(address account) internal {\r\n    \r\n  }\r\n\r\n  // Define an internal function '_removeConsumer' to remove this role, called by 'removeConsumer'\r\n  function _removeConsumer(address account) internal {\r\n    \r\n  }\r\n}",
-  "sourcePath": "D:/AXEL/Personal/Tutorials/suply_chain/project-6/contracts/coffeeaccesscontrol/ConsumerRole.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addConsumer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceConsumer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isConsumer\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/ConsumerRole.sol\":\"ConsumerRole\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/ConsumerRole.sol\":{\"keccak256\":\"0x39593a230ddbc09d0bb90164fc708a7d62cef3863e90f4877855ee04006d8e5d\",\"urls\":[\"bzzr://c4555d611a1aacb2cc098c0d1c95fddc95a067565626ee1b4d7d4063252a11be\"]},\"/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/Roles.sol\":{\"keccak256\":\"0x95574efd96fe5fe2e906e6bbff5d312202e266943767768482feb1381851b458\",\"urls\":[\"bzzr://e5b952c53f5440910b24c9b5e4257226e855040557bfc6ff01e15cc047d330fe\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061011b806100206000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063112940f914604157806361e6982d146082578063834ff73914608a575b600080fd5b608060048036036020811015605557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e3565b005b608860e6565b005b60c960048036036020811015609e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e8565b604051808215151515815260200191505060405180910390f35b50565b565b600091905056fea165627a7a72305820b8e6d3b62502de4d925dff33d8ca4158f024a86de6764169faac5f18997bf6b60029",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063112940f914604157806361e6982d146082578063834ff73914608a575b600080fd5b608060048036036020811015605557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e3565b005b608860e6565b005b60c960048036036020811015609e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e8565b604051808215151515815260200191505060405180910390f35b50565b565b600091905056fea165627a7a72305820b8e6d3b62502de4d925dff33d8ca4158f024a86de6764169faac5f18997bf6b60029",
+  "sourceMap": "155:1106:1:-;;;411:31;8:9:-1;5:2;;;30:1;27;20:12;5:2;411:31:1;155:1106;;;;;;",
+  "deployedSourceMap": "155:1106:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;155:1106:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;762:68;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;762:68:1;;;;;;;;;;;;;;;;;;;:::i;:::-;;898:45;;;:::i;:::-;;627:74;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;627:74:1;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;762:68;;:::o;898:45::-;:::o;627:74::-;685:4;627:74;;;:::o",
+  "source": "pragma solidity ^0.5.8;\n\n// Import the library 'Roles'\nimport \"./Roles.sol\";\n\n// Define a contract 'ConsumerRole' to manage this role - add, remove, check\ncontract ConsumerRole {\n\n  // Define 2 events, one for Adding, and other for Removing\n\n  // Define a struct 'consumers' by inheriting from 'Roles' library, struct Role\n\n  // In the constructor make the address that deploys this contract the 1st consumer\n  constructor() public {\n    \n  }\n\n  // Define a modifier that checks to see if msg.sender has the appropriate role\n  modifier onlyConsumer() {\n    \n    _;\n  }\n\n  // Define a function 'isConsumer' to check this role\n  function isConsumer(address account) public view returns (bool) {\n    \n  }\n\n  // Define a function 'addConsumer' that adds this role\n  function addConsumer(address account) public onlyConsumer {\n    \n  }\n\n  // Define a function 'renounceConsumer' to renounce this role\n  function renounceConsumer() public {\n    \n  }\n\n  // Define an internal function '_addConsumer' to add this role, called by 'addConsumer'\n  function _addConsumer(address account) internal {\n    \n  }\n\n  // Define an internal function '_removeConsumer' to remove this role, called by 'removeConsumer'\n  function _removeConsumer(address account) internal {\n    \n  }\n}",
+  "sourcePath": "/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/ConsumerRole.sol",
   "ast": {
-    "absolutePath": "/D/AXEL/Personal/Tutorials/suply_chain/project-6/contracts/coffeeaccesscontrol/ConsumerRole.sol",
+    "absolutePath": "/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/ConsumerRole.sol",
     "exportedSymbols": {
       "ConsumerRole": [
         100
@@ -79,13 +79,13 @@
         "src": "0:23:1"
       },
       {
-        "absolutePath": "/D/AXEL/Personal/Tutorials/suply_chain/project-6/contracts/coffeeaccesscontrol/Roles.sol",
+        "absolutePath": "/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/Roles.sol",
         "file": "./Roles.sol",
         "id": 59,
         "nodeType": "ImportDirective",
         "scope": 101,
         "sourceUnit": 386,
-        "src": "58:21:1",
+        "src": "55:21:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -106,7 +106,7 @@
             "body": {
               "id": 62,
               "nodeType": "Block",
-              "src": "445:12:1",
+              "src": "432:10:1",
               "statements": []
             },
             "documentation": null,
@@ -120,16 +120,16 @@
               "id": 60,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "435:2:1"
+              "src": "422:2:1"
             },
             "returnParameters": {
               "id": 61,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "445:0:1"
+              "src": "432:0:1"
             },
             "scope": 100,
-            "src": "424:33:1",
+            "src": "411:31:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -138,12 +138,12 @@
             "body": {
               "id": 66,
               "nodeType": "Block",
-              "src": "569:20:1",
+              "src": "551:17:1",
               "statements": [
                 {
                   "id": 65,
                   "nodeType": "PlaceholderStatement",
-                  "src": "582:1:1"
+                  "src": "562:1:1"
                 }
               ]
             },
@@ -155,16 +155,16 @@
               "id": 64,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "566:2:1"
+              "src": "548:2:1"
             },
-            "src": "545:44:1",
+            "src": "527:41:1",
             "visibility": "internal"
           },
           {
             "body": {
               "id": 74,
               "nodeType": "Block",
-              "src": "715:12:1",
+              "src": "691:10:1",
               "statements": []
             },
             "documentation": null,
@@ -184,7 +184,7 @@
                   "name": "account",
                   "nodeType": "VariableDeclaration",
                   "scope": 75,
-                  "src": "671:15:1",
+                  "src": "647:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -195,7 +195,7 @@
                     "id": 68,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "671:7:1",
+                    "src": "647:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -206,7 +206,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "670:17:1"
+              "src": "646:17:1"
             },
             "returnParameters": {
               "id": 73,
@@ -218,7 +218,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 75,
-                  "src": "709:4:1",
+                  "src": "685:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -229,7 +229,7 @@
                     "id": 71,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "709:4:1",
+                    "src": "685:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -239,10 +239,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "708:6:1"
+              "src": "684:6:1"
             },
             "scope": 100,
-            "src": "651:76:1",
+            "src": "627:74:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -251,7 +251,7 @@
             "body": {
               "id": 82,
               "nodeType": "Block",
-              "src": "849:12:1",
+              "src": "820:10:1",
               "statements": []
             },
             "documentation": null,
@@ -269,14 +269,14 @@
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 67,
-                  "src": "836:12:1",
+                  "src": "807:12:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "836:12:1"
+                "src": "807:12:1"
               }
             ],
             "name": "addConsumer",
@@ -291,7 +291,7 @@
                   "name": "account",
                   "nodeType": "VariableDeclaration",
                   "scope": 83,
-                  "src": "812:15:1",
+                  "src": "783:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -302,7 +302,7 @@
                     "id": 76,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "812:7:1",
+                    "src": "783:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -313,16 +313,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "811:17:1"
+              "src": "782:17:1"
             },
             "returnParameters": {
               "id": 81,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "849:0:1"
+              "src": "820:0:1"
             },
             "scope": 100,
-            "src": "791:70:1",
+            "src": "762:68:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -331,7 +331,7 @@
             "body": {
               "id": 86,
               "nodeType": "Block",
-              "src": "967:12:1",
+              "src": "933:10:1",
               "statements": []
             },
             "documentation": null,
@@ -345,16 +345,16 @@
               "id": 84,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "957:2:1"
+              "src": "923:2:1"
             },
             "returnParameters": {
               "id": 85,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "967:0:1"
+              "src": "933:0:1"
             },
             "scope": 100,
-            "src": "932:47:1",
+            "src": "898:45:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -363,7 +363,7 @@
             "body": {
               "id": 92,
               "nodeType": "Block",
-              "src": "1124:12:1",
+              "src": "1085:10:1",
               "statements": []
             },
             "documentation": null,
@@ -383,7 +383,7 @@
                   "name": "account",
                   "nodeType": "VariableDeclaration",
                   "scope": 93,
-                  "src": "1098:15:1",
+                  "src": "1059:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -394,7 +394,7 @@
                     "id": 88,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1098:7:1",
+                    "src": "1059:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -405,16 +405,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1097:17:1"
+              "src": "1058:17:1"
             },
             "returnParameters": {
               "id": 91,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1124:0:1"
+              "src": "1085:0:1"
             },
             "scope": 100,
-            "src": "1076:60:1",
+            "src": "1037:58:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
@@ -423,7 +423,7 @@
             "body": {
               "id": 98,
               "nodeType": "Block",
-              "src": "1293:12:1",
+              "src": "1249:10:1",
               "statements": []
             },
             "documentation": null,
@@ -443,7 +443,7 @@
                   "name": "account",
                   "nodeType": "VariableDeclaration",
                   "scope": 99,
-                  "src": "1267:15:1",
+                  "src": "1223:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -454,7 +454,7 @@
                     "id": 94,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1267:7:1",
+                    "src": "1223:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -465,29 +465,29 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1266:17:1"
+              "src": "1222:17:1"
             },
             "returnParameters": {
               "id": 97,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1293:0:1"
+              "src": "1249:0:1"
             },
             "scope": 100,
-            "src": "1242:63:1",
+            "src": "1198:61:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
         "scope": 101,
-        "src": "161:1147:1"
+        "src": "155:1106:1"
       }
     ],
-    "src": "0:1308:1"
+    "src": "0:1261:1"
   },
   "legacyAST": {
-    "absolutePath": "/D/AXEL/Personal/Tutorials/suply_chain/project-6/contracts/coffeeaccesscontrol/ConsumerRole.sol",
+    "absolutePath": "/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/ConsumerRole.sol",
     "exportedSymbols": {
       "ConsumerRole": [
         100
@@ -508,13 +508,13 @@
         "src": "0:23:1"
       },
       {
-        "absolutePath": "/D/AXEL/Personal/Tutorials/suply_chain/project-6/contracts/coffeeaccesscontrol/Roles.sol",
+        "absolutePath": "/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/Roles.sol",
         "file": "./Roles.sol",
         "id": 59,
         "nodeType": "ImportDirective",
         "scope": 101,
         "sourceUnit": 386,
-        "src": "58:21:1",
+        "src": "55:21:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -535,7 +535,7 @@
             "body": {
               "id": 62,
               "nodeType": "Block",
-              "src": "445:12:1",
+              "src": "432:10:1",
               "statements": []
             },
             "documentation": null,
@@ -549,16 +549,16 @@
               "id": 60,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "435:2:1"
+              "src": "422:2:1"
             },
             "returnParameters": {
               "id": 61,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "445:0:1"
+              "src": "432:0:1"
             },
             "scope": 100,
-            "src": "424:33:1",
+            "src": "411:31:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -567,12 +567,12 @@
             "body": {
               "id": 66,
               "nodeType": "Block",
-              "src": "569:20:1",
+              "src": "551:17:1",
               "statements": [
                 {
                   "id": 65,
                   "nodeType": "PlaceholderStatement",
-                  "src": "582:1:1"
+                  "src": "562:1:1"
                 }
               ]
             },
@@ -584,16 +584,16 @@
               "id": 64,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "566:2:1"
+              "src": "548:2:1"
             },
-            "src": "545:44:1",
+            "src": "527:41:1",
             "visibility": "internal"
           },
           {
             "body": {
               "id": 74,
               "nodeType": "Block",
-              "src": "715:12:1",
+              "src": "691:10:1",
               "statements": []
             },
             "documentation": null,
@@ -613,7 +613,7 @@
                   "name": "account",
                   "nodeType": "VariableDeclaration",
                   "scope": 75,
-                  "src": "671:15:1",
+                  "src": "647:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -624,7 +624,7 @@
                     "id": 68,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "671:7:1",
+                    "src": "647:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -635,7 +635,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "670:17:1"
+              "src": "646:17:1"
             },
             "returnParameters": {
               "id": 73,
@@ -647,7 +647,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 75,
-                  "src": "709:4:1",
+                  "src": "685:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -658,7 +658,7 @@
                     "id": 71,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "709:4:1",
+                    "src": "685:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -668,10 +668,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "708:6:1"
+              "src": "684:6:1"
             },
             "scope": 100,
-            "src": "651:76:1",
+            "src": "627:74:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -680,7 +680,7 @@
             "body": {
               "id": 82,
               "nodeType": "Block",
-              "src": "849:12:1",
+              "src": "820:10:1",
               "statements": []
             },
             "documentation": null,
@@ -698,14 +698,14 @@
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 67,
-                  "src": "836:12:1",
+                  "src": "807:12:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "836:12:1"
+                "src": "807:12:1"
               }
             ],
             "name": "addConsumer",
@@ -720,7 +720,7 @@
                   "name": "account",
                   "nodeType": "VariableDeclaration",
                   "scope": 83,
-                  "src": "812:15:1",
+                  "src": "783:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -731,7 +731,7 @@
                     "id": 76,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "812:7:1",
+                    "src": "783:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -742,16 +742,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "811:17:1"
+              "src": "782:17:1"
             },
             "returnParameters": {
               "id": 81,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "849:0:1"
+              "src": "820:0:1"
             },
             "scope": 100,
-            "src": "791:70:1",
+            "src": "762:68:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -760,7 +760,7 @@
             "body": {
               "id": 86,
               "nodeType": "Block",
-              "src": "967:12:1",
+              "src": "933:10:1",
               "statements": []
             },
             "documentation": null,
@@ -774,16 +774,16 @@
               "id": 84,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "957:2:1"
+              "src": "923:2:1"
             },
             "returnParameters": {
               "id": 85,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "967:0:1"
+              "src": "933:0:1"
             },
             "scope": 100,
-            "src": "932:47:1",
+            "src": "898:45:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -792,7 +792,7 @@
             "body": {
               "id": 92,
               "nodeType": "Block",
-              "src": "1124:12:1",
+              "src": "1085:10:1",
               "statements": []
             },
             "documentation": null,
@@ -812,7 +812,7 @@
                   "name": "account",
                   "nodeType": "VariableDeclaration",
                   "scope": 93,
-                  "src": "1098:15:1",
+                  "src": "1059:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -823,7 +823,7 @@
                     "id": 88,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1098:7:1",
+                    "src": "1059:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -834,16 +834,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1097:17:1"
+              "src": "1058:17:1"
             },
             "returnParameters": {
               "id": 91,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1124:0:1"
+              "src": "1085:0:1"
             },
             "scope": 100,
-            "src": "1076:60:1",
+            "src": "1037:58:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
@@ -852,7 +852,7 @@
             "body": {
               "id": 98,
               "nodeType": "Block",
-              "src": "1293:12:1",
+              "src": "1249:10:1",
               "statements": []
             },
             "documentation": null,
@@ -872,7 +872,7 @@
                   "name": "account",
                   "nodeType": "VariableDeclaration",
                   "scope": 99,
-                  "src": "1267:15:1",
+                  "src": "1223:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -883,7 +883,7 @@
                     "id": 94,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1267:7:1",
+                    "src": "1223:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -894,32 +894,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1266:17:1"
+              "src": "1222:17:1"
             },
             "returnParameters": {
               "id": 97,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1293:0:1"
+              "src": "1249:0:1"
             },
             "scope": 100,
-            "src": "1242:63:1",
+            "src": "1198:61:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
         "scope": 101,
-        "src": "161:1147:1"
+        "src": "155:1106:1"
       }
     ],
-    "src": "0:1308:1"
+    "src": "0:1261:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.8+commit.23d335f2.Emscripten.clang"
   },
   "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x95dABfBd2D67D8E11e28e9e7728f75BaE159a334",
+      "transactionHash": "0x981e6939544dffc30e28aecf9f7c19631b1c8406261f40d2502fd47bd0b6c42a"
+    },
     "1561519834435": {
       "events": {},
       "links": {},
@@ -939,8 +945,8 @@
       "transactionHash": "0x440088db9cd3ca656c2e9b1f32bfa0a965fb721f2e38bf2cb16aef9ff25709be"
     }
   },
-  "schemaVersion": "3.0.11",
-  "updatedAt": "2019-06-27T02:21:50.605Z",
+  "schemaVersion": "3.0.16",
+  "updatedAt": "2019-10-17T20:27:26.875Z",
   "devdoc": {
     "methods": {}
   },
