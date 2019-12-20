@@ -3,14 +3,13 @@
   "abi": [
     {
       "inputs": [],
-      "payable": false,
       "stateMutability": "nonpayable",
       "type": "constructor"
     },
     {
-      "constant": true,
       "inputs": [
         {
+          "internalType": "address",
           "name": "account",
           "type": "address"
         }
@@ -18,44 +17,41 @@
       "name": "isRetailer",
       "outputs": [
         {
+          "internalType": "bool",
           "name": "",
           "type": "bool"
         }
       ],
-      "payable": false,
       "stateMutability": "view",
       "type": "function"
     },
     {
-      "constant": false,
       "inputs": [
         {
+          "internalType": "address",
           "name": "account",
           "type": "address"
         }
       ],
       "name": "addRetailer",
       "outputs": [],
-      "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
     },
     {
-      "constant": false,
       "inputs": [],
       "name": "renounceRetailer",
       "outputs": [],
-      "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isRetailer\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addRetailer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceRetailer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/RetailerRole.sol\":\"RetailerRole\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/RetailerRole.sol\":{\"keccak256\":\"0x2ec95bcad9f33f6a531a4c8b213fe2407aa9b591f254a65081893bda3f9245b2\",\"urls\":[\"bzzr://1e3ea0f53a5cfac158253ffb4f6519e10119b3b195797bc78ccfbd8ae2482aa8\"]},\"/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/Roles.sol\":{\"keccak256\":\"0x95574efd96fe5fe2e906e6bbff5d312202e266943767768482feb1381851b458\",\"urls\":[\"bzzr://e5b952c53f5440910b24c9b5e4257226e855040557bfc6ff01e15cc047d330fe\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5061011b806100206000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80635da09b881460415780638ec4f50514609a578063db0e6a2f1460db575b600080fd5b608060048036036020811015605557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e3565b604051808215151515815260200191505060405180910390f35b60d96004803603602081101560ae57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060ea565b005b60e160ed565b005b6000919050565b50565b56fea165627a7a72305820e9ff344c508c930b38cf0f09ebd5f7c419c460a7cb2bc2ed99917b8c7a3959430029",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c80635da09b881460415780638ec4f50514609a578063db0e6a2f1460db575b600080fd5b608060048036036020811015605557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e3565b604051808215151515815260200191505060405180910390f35b60d96004803603602081101560ae57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060ea565b005b60e160ed565b005b6000919050565b50565b56fea165627a7a72305820e9ff344c508c930b38cf0f09ebd5f7c419c460a7cb2bc2ed99917b8c7a3959430029",
-  "sourceMap": "155:1108:4:-;;;413:31;8:9:-1;5:2;;;30:1;27;20:12;5:2;413:31:4;155:1108;;;;;;",
-  "deployedSourceMap": "155:1108:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;155:1108:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;629:74;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;629:74:4;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;764:68;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;764:68:4;;;;;;;;;;;;;;;;;;;:::i;:::-;;900:45;;;:::i;:::-;;629:74;687:4;629:74;;;:::o;764:68::-;;:::o;900:45::-;:::o",
-  "source": "pragma solidity ^0.5.8;\n\n// Import the library 'Roles'\nimport \"./Roles.sol\";\n\n// Define a contract 'RetailerRole' to manage this role - add, remove, check\ncontract RetailerRole {\n\n  // Define 2 events, one for Adding, and other for Removing\n  \n  // Define a struct 'retailers' by inheriting from 'Roles' library, struct Role\n\n  // In the constructor make the address that deploys this contract the 1st retailer\n  constructor() public {\n    \n  }\n\n  // Define a modifier that checks to see if msg.sender has the appropriate role\n  modifier onlyRetailer() {\n    \n    _;\n  }\n\n  // Define a function 'isRetailer' to check this role\n  function isRetailer(address account) public view returns (bool) {\n    \n  }\n\n  // Define a function 'addRetailer' that adds this role\n  function addRetailer(address account) public onlyRetailer {\n    \n  }\n\n  // Define a function 'renounceRetailer' to renounce this role\n  function renounceRetailer() public {\n    \n  }\n\n  // Define an internal function '_addRetailer' to add this role, called by 'addRetailer'\n  function _addRetailer(address account) internal {\n    \n  }\n\n  // Define an internal function '_removeRetailer' to remove this role, called by 'removeRetailer'\n  function _removeRetailer(address account) internal {\n    \n  }\n}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addRetailer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isRetailer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceRetailer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/RetailerRole.sol\":\"RetailerRole\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/RetailerRole.sol\":{\"keccak256\":\"0x7319387cf5a6e55aa65ab4a0fad7df13b3cff41069890833ec69e558525231cc\",\"urls\":[\"bzz-raw://5b8c86623170d80e19f6a43eb36f0a50c2d11b522fa9c16ec9cdf1f9fd5d474b\",\"dweb:/ipfs/QmYxoKnH484WZFsMoiGUbM2NsZcfUmUvBY2pk4gXGSa7U2\"]},\"/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/Roles.sol\":{\"keccak256\":\"0x330f9bb30217ab703870290c2a75fecf7d078a37acc9c1e990cca140b02bee23\",\"urls\":[\"bzz-raw://934574cbb403a494c52e97eb40417e70bb40ede685aece8db3ca4d71e65f0fb1\",\"dweb:/ipfs/QmfJcXcF1U6dX5p6k11nipaR24R33dzCgDoPYXe3FSQk32\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610125806100206000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80635da09b881460415780638ec4f50514609a578063db0e6a2f1460db575b600080fd5b608060048036036020811015605557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e3565b604051808215151515815260200191505060405180910390f35b60d96004803603602081101560ae57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060ea565b005b60e160ed565b005b6000919050565b50565b56fea264697066735822122041598cb8fe5095241b65fb2033439e0cfca3190df174bafca177cc5a3931137f64736f6c63430006000033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c80635da09b881460415780638ec4f50514609a578063db0e6a2f1460db575b600080fd5b608060048036036020811015605557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060e3565b604051808215151515815260200191505060405180910390f35b60d96004803603602081101560ae57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505060ea565b005b60e160ed565b005b6000919050565b50565b56fea264697066735822122041598cb8fe5095241b65fb2033439e0cfca3190df174bafca177cc5a3931137f64736f6c63430006000033",
+  "sourceMap": "155:1108:4:-:0;;;413:31;8:9:-1;5:2;;;30:1;27;20:12;5:2;413:31:4;155:1108;;;;;;",
+  "deployedSourceMap": "155:1108:4:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;155:1108:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;629:74;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;629:74:4;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;764:68;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;764:68:4;;;;;;;;;;;;;;;;;;;:::i;:::-;;900:45;;;:::i;:::-;;629:74;687:4;629:74;;;:::o;764:68::-;;:::o;900:45::-;:::o",
+  "source": "pragma solidity ^0.6.0;\n\n// Import the library 'Roles'\nimport \"./Roles.sol\";\n\n// Define a contract 'RetailerRole' to manage this role - add, remove, check\ncontract RetailerRole {\n\n  // Define 2 events, one for Adding, and other for Removing\n  \n  // Define a struct 'retailers' by inheriting from 'Roles' library, struct Role\n\n  // In the constructor make the address that deploys this contract the 1st retailer\n  constructor() public {\n    \n  }\n\n  // Define a modifier that checks to see if msg.sender has the appropriate role\n  modifier onlyRetailer() {\n    \n    _;\n  }\n\n  // Define a function 'isRetailer' to check this role\n  function isRetailer(address account) public view returns (bool) {\n    \n  }\n\n  // Define a function 'addRetailer' that adds this role\n  function addRetailer(address account) public onlyRetailer {\n    \n  }\n\n  // Define a function 'renounceRetailer' to renounce this role\n  function renounceRetailer() public {\n    \n  }\n\n  // Define an internal function '_addRetailer' to add this role, called by 'addRetailer'\n  function _addRetailer(address account) internal {\n    \n  }\n\n  // Define an internal function '_removeRetailer' to remove this role, called by 'removeRetailer'\n  function _removeRetailer(address account) internal {\n    \n  }\n}",
   "sourcePath": "/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/RetailerRole.sol",
   "ast": {
     "absolutePath": "/Users/axelgalicia/Documents/personal/github/blockchain/supply/blockchain-supply-chain/project-6/contracts/coffeeaccesscontrol/RetailerRole.sol",
@@ -72,8 +68,8 @@
         "literals": [
           "solidity",
           "^",
-          "0.5",
-          ".8"
+          "0.6",
+          ".0"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:23:4"
@@ -84,12 +80,13 @@
         "id": 250,
         "nodeType": "ImportDirective",
         "scope": 292,
-        "sourceUnit": 386,
+        "sourceUnit": 389,
         "src": "55:21:4",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
+        "abstract": false,
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
@@ -116,6 +113,7 @@
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 251,
               "nodeType": "ParameterList",
@@ -131,7 +129,7 @@
             "scope": 291,
             "src": "413:31:4",
             "stateMutability": "nonpayable",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "public"
           },
           {
@@ -151,6 +149,7 @@
             "id": 258,
             "name": "onlyRetailer",
             "nodeType": "ModifierDefinition",
+            "overrides": null,
             "parameters": {
               "id": 255,
               "nodeType": "ParameterList",
@@ -158,6 +157,7 @@
               "src": "550:2:4"
             },
             "src": "529:41:4",
+            "virtual": false,
             "visibility": "internal"
           },
           {
@@ -168,12 +168,14 @@
               "statements": []
             },
             "documentation": null,
+            "functionSelector": "5da09b88",
             "id": 266,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isRetailer",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 261,
               "nodeType": "ParameterList",
@@ -183,6 +185,7 @@
                   "id": 260,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
+                  "overrides": null,
                   "scope": 266,
                   "src": "649:15:4",
                   "stateVariable": false,
@@ -217,6 +220,7 @@
                   "id": 263,
                   "name": "",
                   "nodeType": "VariableDeclaration",
+                  "overrides": null,
                   "scope": 266,
                   "src": "687:4:4",
                   "stateVariable": false,
@@ -244,7 +248,7 @@
             "scope": 291,
             "src": "629:74:4",
             "stateMutability": "view",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "public"
           },
           {
@@ -255,6 +259,7 @@
               "statements": []
             },
             "documentation": null,
+            "functionSelector": "8ec4f505",
             "id": 274,
             "implemented": true,
             "kind": "function",
@@ -281,6 +286,7 @@
             ],
             "name": "addRetailer",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 269,
               "nodeType": "ParameterList",
@@ -290,6 +296,7 @@
                   "id": 268,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
+                  "overrides": null,
                   "scope": 274,
                   "src": "785:15:4",
                   "stateVariable": false,
@@ -324,7 +331,7 @@
             "scope": 291,
             "src": "764:68:4",
             "stateMutability": "nonpayable",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "public"
           },
           {
@@ -335,12 +342,14 @@
               "statements": []
             },
             "documentation": null,
+            "functionSelector": "db0e6a2f",
             "id": 278,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "renounceRetailer",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 275,
               "nodeType": "ParameterList",
@@ -356,7 +365,7 @@
             "scope": 291,
             "src": "900:45:4",
             "stateMutability": "nonpayable",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "public"
           },
           {
@@ -373,6 +382,7 @@
             "modifiers": [],
             "name": "_addRetailer",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 281,
               "nodeType": "ParameterList",
@@ -382,6 +392,7 @@
                   "id": 280,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
+                  "overrides": null,
                   "scope": 284,
                   "src": "1061:15:4",
                   "stateVariable": false,
@@ -416,7 +427,7 @@
             "scope": 291,
             "src": "1039:58:4",
             "stateMutability": "nonpayable",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "internal"
           },
           {
@@ -433,6 +444,7 @@
             "modifiers": [],
             "name": "_removeRetailer",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 287,
               "nodeType": "ParameterList",
@@ -442,6 +454,7 @@
                   "id": 286,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
+                  "overrides": null,
                   "scope": 290,
                   "src": "1225:15:4",
                   "stateVariable": false,
@@ -476,7 +489,7 @@
             "scope": 291,
             "src": "1200:61:4",
             "stateMutability": "nonpayable",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "internal"
           }
         ],
@@ -501,8 +514,8 @@
         "literals": [
           "solidity",
           "^",
-          "0.5",
-          ".8"
+          "0.6",
+          ".0"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:23:4"
@@ -513,12 +526,13 @@
         "id": 250,
         "nodeType": "ImportDirective",
         "scope": 292,
-        "sourceUnit": 386,
+        "sourceUnit": 389,
         "src": "55:21:4",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
+        "abstract": false,
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
@@ -545,6 +559,7 @@
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 251,
               "nodeType": "ParameterList",
@@ -560,7 +575,7 @@
             "scope": 291,
             "src": "413:31:4",
             "stateMutability": "nonpayable",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "public"
           },
           {
@@ -580,6 +595,7 @@
             "id": 258,
             "name": "onlyRetailer",
             "nodeType": "ModifierDefinition",
+            "overrides": null,
             "parameters": {
               "id": 255,
               "nodeType": "ParameterList",
@@ -587,6 +603,7 @@
               "src": "550:2:4"
             },
             "src": "529:41:4",
+            "virtual": false,
             "visibility": "internal"
           },
           {
@@ -597,12 +614,14 @@
               "statements": []
             },
             "documentation": null,
+            "functionSelector": "5da09b88",
             "id": 266,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isRetailer",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 261,
               "nodeType": "ParameterList",
@@ -612,6 +631,7 @@
                   "id": 260,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
+                  "overrides": null,
                   "scope": 266,
                   "src": "649:15:4",
                   "stateVariable": false,
@@ -646,6 +666,7 @@
                   "id": 263,
                   "name": "",
                   "nodeType": "VariableDeclaration",
+                  "overrides": null,
                   "scope": 266,
                   "src": "687:4:4",
                   "stateVariable": false,
@@ -673,7 +694,7 @@
             "scope": 291,
             "src": "629:74:4",
             "stateMutability": "view",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "public"
           },
           {
@@ -684,6 +705,7 @@
               "statements": []
             },
             "documentation": null,
+            "functionSelector": "8ec4f505",
             "id": 274,
             "implemented": true,
             "kind": "function",
@@ -710,6 +732,7 @@
             ],
             "name": "addRetailer",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 269,
               "nodeType": "ParameterList",
@@ -719,6 +742,7 @@
                   "id": 268,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
+                  "overrides": null,
                   "scope": 274,
                   "src": "785:15:4",
                   "stateVariable": false,
@@ -753,7 +777,7 @@
             "scope": 291,
             "src": "764:68:4",
             "stateMutability": "nonpayable",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "public"
           },
           {
@@ -764,12 +788,14 @@
               "statements": []
             },
             "documentation": null,
+            "functionSelector": "db0e6a2f",
             "id": 278,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "renounceRetailer",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 275,
               "nodeType": "ParameterList",
@@ -785,7 +811,7 @@
             "scope": 291,
             "src": "900:45:4",
             "stateMutability": "nonpayable",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "public"
           },
           {
@@ -802,6 +828,7 @@
             "modifiers": [],
             "name": "_addRetailer",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 281,
               "nodeType": "ParameterList",
@@ -811,6 +838,7 @@
                   "id": 280,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
+                  "overrides": null,
                   "scope": 284,
                   "src": "1061:15:4",
                   "stateVariable": false,
@@ -845,7 +873,7 @@
             "scope": 291,
             "src": "1039:58:4",
             "stateMutability": "nonpayable",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "internal"
           },
           {
@@ -862,6 +890,7 @@
             "modifiers": [],
             "name": "_removeRetailer",
             "nodeType": "FunctionDefinition",
+            "overrides": null,
             "parameters": {
               "id": 287,
               "nodeType": "ParameterList",
@@ -871,6 +900,7 @@
                   "id": 286,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
+                  "overrides": null,
                   "scope": 290,
                   "src": "1225:15:4",
                   "stateVariable": false,
@@ -905,7 +935,7 @@
             "scope": 291,
             "src": "1200:61:4",
             "stateMutability": "nonpayable",
-            "superFunction": null,
+            "virtual": false,
             "visibility": "internal"
           }
         ],
@@ -917,36 +947,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+    "version": "0.6.0+commit.26b70077.Emscripten.clang"
   },
-  "networks": {
-    "5777": {
-      "events": {},
-      "links": {},
-      "address": "0xC3894d9776880C5a6c4E82D22aaBAd5CF38f29d5",
-      "transactionHash": "0x2e221e7ba3dc3db84798cc3056c498d6c1c6e09a11aef43f7d3b9218c7386aee"
-    },
-    "1561519834435": {
-      "events": {},
-      "links": {},
-      "address": "0x6c47e2dcb3780142e5023C1dDCEa301F83BdFA80",
-      "transactionHash": "0xdebbe8188d2bdf7026ad098712c4a55e69aaa90220e6ef21ca398e876294f25c"
-    },
-    "1561601938773": {
-      "events": {},
-      "links": {},
-      "address": "0x8d21276EF4dD87fbDb2b977ac8fd1E31A1dbce59",
-      "transactionHash": "0x8ef6bec3a4826b9082e6d8d04bcd8069453335a46b9891577cfba93fe4815c4a"
-    },
-    "1561602096446": {
-      "events": {},
-      "links": {},
-      "address": "0x79051A2faFcC216A55d3897474012145d158F170",
-      "transactionHash": "0x7505841b63f40cb3195c56c6438d63e95b9ee33ae7590c35a0ba056cc764d149"
-    }
-  },
-  "schemaVersion": "3.0.16",
-  "updatedAt": "2019-10-17T20:27:26.873Z",
+  "networks": {},
+  "schemaVersion": "3.0.20",
+  "updatedAt": "2019-12-20T23:19:19.734Z",
   "devdoc": {
     "methods": {}
   },

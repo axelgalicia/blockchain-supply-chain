@@ -11,7 +11,8 @@
   "author": "Axel Galicia <axelgalicia@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "lodash": ">=4.17.13"
+    "lodash": ">=4.17.13",
+    "solc": "^0.6.0"
   },
   "devDependencies": {
     "lite-server": "^2.5.3"
