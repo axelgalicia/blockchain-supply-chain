@@ -13,9 +13,8 @@ library Roles {
    * @dev give an account access to this role
    */
   function add(Role storage role, address account) internal {
-    require(account != address(0));
-    require(!has(role, account));
-
+    require(account != address(0), "Address cannot be zero address");
+    require(!has(role, account), "This address already has this role");
     role.bearer[account] = true;
   }
 
@@ -23,8 +22,8 @@ library Roles {
    * @dev remove an account's access to this role
    */
   function remove(Role storage role, address account) internal {
-    require(account != address(0));
-    require(has(role, account));
+    require(account != address(0), "Address cannot be zero address");
+    require(has(role, account), "This address does not have this role yet");
 
     role.bearer[account] = false;
   }
@@ -38,7 +37,7 @@ library Roles {
     view
     returns (bool)
   {
-    require(account != address(0));
+    require(account != address(0), "Address cannot be zero address");
     return role.bearer[account];
   }
 }
