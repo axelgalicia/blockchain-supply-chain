@@ -74,7 +74,7 @@ App = {
         }
         // If no injected web3 instance is detected, fall back to Ganache
         else {
-            App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+            App.web3Provider = new Web3.providers.HttpProvider('http://localhost:8545');
         }
 
         App.getMetaskAccountID();
@@ -125,6 +125,8 @@ App = {
         event.preventDefault();
 
         App.getMetaskAccountID();
+        App.readForm();
+
 
         var processId = parseInt($(event.target).data('id'));
         console.log('processId', processId);
@@ -166,6 +168,13 @@ App = {
     harvestItem: function (event) {
         event.preventDefault();
         var processId = parseInt($(event.target).data('id'));
+
+        if (!App.upc || !App.metamaskAccountID || !App.originFarmName
+            || !App.originFarmInformation || !App.originFarmLatitude
+            || !App.originFarmLongitude || !App.productNotes) {
+            alert('Farmer and Product Information cannot be empty');
+            return;
+        }
 
         App.contracts.SupplyChain.deployed().then(function (instance) {
             return instance.harvestItem(
@@ -275,9 +284,9 @@ App = {
     purchaseItem: function (event) {
         event.preventDefault();
         var processId = parseInt($(event.target).data('id'));
-
+        const walletValue = web3.toWei(1, "ether");
         App.contracts.SupplyChain.deployed().then(function (instance) {
-            return instance.purchaseItem(App.upc, { from: App.metamaskAccountID });
+            return instance.purchaseItem(App.upc, { from: App.metamaskAccountID, value: walletValue });
         }).then(function (result) {
             $("#ftc-item").text(result);
             console.log('purchaseItem', result);

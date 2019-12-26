@@ -242,10 +242,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1631,
-                        1632
+                        1641,
+                        1642
                       ],
-                      "referencedDeclaration": 1632,
+                      "referencedDeclaration": 1642,
                       "src": "322:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -392,10 +392,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1631,
-                        1632
+                        1641,
+                        1642
                       ],
-                      "referencedDeclaration": 1632,
+                      "referencedDeclaration": 1642,
                       "src": "393:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -743,10 +743,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1631,
-                        1632
+                        1641,
+                        1642
                       ],
-                      "referencedDeclaration": 1632,
+                      "referencedDeclaration": 1642,
                       "src": "638:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -877,10 +877,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1631,
-                        1632
+                        1641,
+                        1642
                       ],
-                      "referencedDeclaration": 1632,
+                      "referencedDeclaration": 1642,
                       "src": "709:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1228,10 +1228,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1631,
-                        1632
+                        1641,
+                        1642
                       ],
-                      "referencedDeclaration": 1632,
+                      "referencedDeclaration": 1642,
                       "src": "1010:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1674,10 +1674,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1631,
-                        1632
+                        1641,
+                        1642
                       ],
-                      "referencedDeclaration": 1632,
+                      "referencedDeclaration": 1642,
                       "src": "322:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1824,10 +1824,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1631,
-                        1632
+                        1641,
+                        1642
                       ],
-                      "referencedDeclaration": 1632,
+                      "referencedDeclaration": 1642,
                       "src": "393:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2175,10 +2175,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1631,
-                        1632
+                        1641,
+                        1642
                       ],
-                      "referencedDeclaration": 1632,
+                      "referencedDeclaration": 1642,
                       "src": "638:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2309,10 +2309,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1631,
-                        1632
+                        1641,
+                        1642
                       ],
-                      "referencedDeclaration": 1632,
+                      "referencedDeclaration": 1642,
                       "src": "709:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2660,10 +2660,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1631,
-                        1632
+                        1641,
+                        1642
                       ],
-                      "referencedDeclaration": 1632,
+                      "referencedDeclaration": 1642,
                       "src": "1010:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2878,7 +2878,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.20",
-  "updatedAt": "2019-12-24T01:06:25.894Z",
+  "updatedAt": "2019-12-26T20:15:06.337Z",
   "devdoc": {
     "details": "Library for managing addresses assigned to a Role.",
     "methods": {},

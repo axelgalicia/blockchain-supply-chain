@@ -304,6 +304,8 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
     onlyConsumer
     // Call modifier to check if upc has passed previous supply chain stage
     received(_upc)
+    // Make sure paid enough
+    paidEnough(items[_upc].productPrice)
     // Access Control List enforced by calling Smart Contract / DApp
     checkValueForConsumer(_upc)
     {
