@@ -370,8 +370,6 @@ contract('SupplyChain', function (accounts) {
         // Retrieve the just now saved item from blockchain by calling function fetchItem()
         const resultBufferTwo = await supplyChain.fetchItemBufferTwo.call(upc)
 
-        console.log(resultBufferTwo[4], 'PRICE');
-
         // Verify the result set
         assert.equal(resultBufferTwo[0], sku, 'Error: Invalid item sku')
         assert.equal(resultBufferTwo[1], upc, 'Error: Invalid item upc')
