@@ -169,16 +169,16 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
     // Add the new item as part of Harvest
     Item memory newItem;
     newItem.upc = _upc;
-    newItem.ownerID = msg.sender;
+    newItem.ownerID = _originFarmerID;
     newItem.originFarmerID = _originFarmerID;
     newItem.originFarmName = _originFarmName;
     newItem.originFarmInformation = _originFarmInformation;
     newItem.originFarmLatitude = _originFarmLatitude;
     newItem.originFarmLongitude = _originFarmLongitude;
     newItem.productNotes = productNotes;
+    newItem.sku = sku;
     // Increment sku
     sku = sku + 1;
-    newItem.sku = sku;
     newItem.productID = _upc + sku;
     // Setting state
     newItem.itemState = State.Harvested;
