@@ -23136,6 +23136,257 @@
     "version": "0.6.0+commit.26b70077.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {
+        "0x28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee07142": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "ConsumerAdded",
+          "type": "event",
+          "signature": "0x28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee07142"
+        },
+        "0xe3f5ed5f263f1f01764a96edfc7d025f511ec5f7d180e8816908b78bcf74f098": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "ConsumerRemoved",
+          "type": "event",
+          "signature": "0xe3f5ed5f263f1f01764a96edfc7d025f511ec5f7d180e8816908b78bcf74f098"
+        },
+        "0xddbf200aa634dc3fb81cfd68583dd1040d1c751d335e1d86b631bde3e977fea8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "DistributorAdded",
+          "type": "event",
+          "signature": "0xddbf200aa634dc3fb81cfd68583dd1040d1c751d335e1d86b631bde3e977fea8"
+        },
+        "0x126174f6cf49c81cdb4a9214c6b8f037bef55b4ec31e4fc776cea2a1c8a88d59": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "DistributorRemoved",
+          "type": "event",
+          "signature": "0x126174f6cf49c81cdb4a9214c6b8f037bef55b4ec31e4fc776cea2a1c8a88d59"
+        },
+        "0x2e0ded4123377a3c2bc9a26f1717655a129e2f20752924d42e730ec89c83dbd0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "FarmerAdded",
+          "type": "event",
+          "signature": "0x2e0ded4123377a3c2bc9a26f1717655a129e2f20752924d42e730ec89c83dbd0"
+        },
+        "0xa5e0f060af304ab17dd418c7927e3da3ae7868189bf387aee09ab179ccc572f2": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "FarmerRemoved",
+          "type": "event",
+          "signature": "0xa5e0f060af304ab17dd418c7927e3da3ae7868189bf387aee09ab179ccc572f2"
+        },
+        "0xa96ae0fc3224ebd79eebfe54bd130cc9cb94416cddd1f2386115e00b72532468": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "upc",
+              "type": "uint256"
+            }
+          ],
+          "name": "ForSale",
+          "type": "event",
+          "signature": "0xa96ae0fc3224ebd79eebfe54bd130cc9cb94416cddd1f2386115e00b72532468"
+        },
+        "0x8e55ccfc9778ff8eba1646d765cf1982537ce0f9257054a17b48aad745250183": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "upc",
+              "type": "uint256"
+            }
+          ],
+          "name": "Harvested",
+          "type": "event",
+          "signature": "0x8e55ccfc9778ff8eba1646d765cf1982537ce0f9257054a17b48aad745250183"
+        },
+        "0x9b3b66e2380b690bae22c73ef1428fb0c91e72fe14a4b6defa13035214187aff": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "upc",
+              "type": "uint256"
+            }
+          ],
+          "name": "Packed",
+          "type": "event",
+          "signature": "0x9b3b66e2380b690bae22c73ef1428fb0c91e72fe14a4b6defa13035214187aff"
+        },
+        "0x5afe3b1bf87069693c075da5c22a98d63d1aef98a30dbbe538d0781a98b77ee5": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "upc",
+              "type": "uint256"
+            }
+          ],
+          "name": "Processed",
+          "type": "event",
+          "signature": "0x5afe3b1bf87069693c075da5c22a98d63d1aef98a30dbbe538d0781a98b77ee5"
+        },
+        "0x653d56639fee6b566a5c804764e9689de38645f0b733df89a36a1b7b42173dd8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "upc",
+              "type": "uint256"
+            }
+          ],
+          "name": "Purchased",
+          "type": "event",
+          "signature": "0x653d56639fee6b566a5c804764e9689de38645f0b733df89a36a1b7b42173dd8"
+        },
+        "0xa8142743f8f70a4c26f3691cf4ed59718381fb2f18070ec52be1f1022d855557": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "upc",
+              "type": "uint256"
+            }
+          ],
+          "name": "Received",
+          "type": "event",
+          "signature": "0xa8142743f8f70a4c26f3691cf4ed59718381fb2f18070ec52be1f1022d855557"
+        },
+        "0x71ae26cad02663e3d92efd6ec56031a80d74a20c0ab4183faa8bf262261c9baa": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "RetailerAdded",
+          "type": "event",
+          "signature": "0x71ae26cad02663e3d92efd6ec56031a80d74a20c0ab4183faa8bf262261c9baa"
+        },
+        "0xdb7176e79cffef81cb01767dd0447a0b24bb72ca9778d4b245581086b2a7e6db": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "RetailerRemoved",
+          "type": "event",
+          "signature": "0xdb7176e79cffef81cb01767dd0447a0b24bb72ca9778d4b245581086b2a7e6db"
+        },
+        "0xf00b9a5725b80c54016f42114f6ed7792d22eecb116011c4afac29c57bef6c95": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "upc",
+              "type": "uint256"
+            }
+          ],
+          "name": "Shipped",
+          "type": "event",
+          "signature": "0xf00b9a5725b80c54016f42114f6ed7792d22eecb116011c4afac29c57bef6c95"
+        },
+        "0x92f64ca637d023f354075a4be751b169c1a8a9ccb6d33cdd0cb3520543995727": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "upc",
+              "type": "uint256"
+            }
+          ],
+          "name": "Sold",
+          "type": "event",
+          "signature": "0x92f64ca637d023f354075a4be751b169c1a8a9ccb6d33cdd0cb3520543995727"
+        },
+        "0x5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "oldOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "TransferOwnership",
+          "type": "event",
+          "signature": "0x5c486528ec3e3f0ea91181cff8116f02bfa350e03b8b6f12e00765adbb5af85c"
+        }
+      },
+      "links": {},
+      "address": "0x95dABfBd2D67D8E11e28e9e7728f75BaE159a334",
+      "transactionHash": "0xa95e68a29fa3e7deb91317f346e0449e2a36cd7f3fe912e72d234a212971d74b"
+    },
     "5777": {
       "events": {
         "0x28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee07142": {
@@ -23389,7 +23640,7 @@
     }
   },
   "schemaVersion": "3.0.20",
-  "updatedAt": "2019-12-26T20:15:09.657Z",
+  "updatedAt": "2019-12-26T21:30:02.399Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

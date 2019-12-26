@@ -1,5 +1,24 @@
 # Blockchain Supply Chain Solution - Coffee
 
+## Rinkeby Trainsaction and Contract Address
+
+```
+   Deploying 'SupplyChain'
+   -----------------------
+   > transaction hash:    0xa95e68a29fa3e7deb91317f346e0449e2a36cd7f3fe912e72d234a212971d74b
+   > Blocks: 1            Seconds: 12
+   > contract address:    0x95dABfBd2D67D8E11e28e9e7728f75BaE159a334
+   > block number:        5683764
+   > block timestamp:     1577395787
+   > account:             0x4ACF5e91813f31aDF278FF22921a210972aBcCc3
+   > balance:             4.95651555
+   > gas used:            3785474
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03785474 ETH
+
+```
+
 ## Description
 
 This project aims to solve the problem of tracking the full supply chain from the production of the coffee beans to the consumer hands.
@@ -117,9 +136,8 @@ npm run dev
 ## Built With
 
 * [Ethereum](https://www.ethereum.org/) - Ethereum is a decentralized platform that runs smart contracts
-* [IPFS](https://ipfs.io/) - IPFS is the Distributed Web | A peer-to-peer hypermedia protocol
-to make the web faster, safer, and more open.
 * [Truffle Framework](http://truffleframework.com/) - Truffle is the most popular development framework for Ethereum with a mission to make your life a whole lot easier.
+* [Infura](https://infura.io/) - The Infura API suite provides instant access over HTTPS and WebSockets to the Ethereum and IPFS networks
 
 
 ## Authors
@@ -133,6 +151,6 @@ See also the list of [contributors](https://github.com/your/project/contributors
 * Solidity
 * Ganache-cli
 * Truffle
-* IPFS
+* Infura
 
 
