@@ -71,7 +71,7 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
 
   // Define a modifer that verifies the Caller
   modifier verifyCaller (address _address) {
-    require(msg.sender == _address, "This account does not match with the caller address");
+    require(msg.sender == _address, "This account is not the owner of this item");
     _;
   }
 
@@ -177,9 +177,9 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
     newItem.originFarmLongitude = _originFarmLongitude;
     newItem.productNotes = productNotes;
     newItem.sku = sku;
+    newItem.productID = _upc + sku;
     // Increment sku
     sku = sku + 1;
-    newItem.productID = _upc + sku;
     // Setting state
     newItem.itemState = State.Harvested;
     // Adding new Item to map
@@ -374,6 +374,7 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, Cons
   itemUPC = existingItem.upc;
   productID = existingItem.productID;
   productNotes = existingItem.productNotes;
+  productPrice = existingItem.productPrice;
   itemState = uint(existingItem.itemState);
   distributorID = existingItem.distributorID;
   retailerID = existingItem.retailerID;
