@@ -11,7 +11,7 @@
   "author": "Axel Galicia <axelgalicia@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "lodash": ">=4.17.13",
+    "lodash": ">=4.17.21",
     "solc": "^0.6.0",
     "truffle-hdwallet-provider": "^1.0.17"
   },
