@@ -1,5 +1,5 @@
-var HDWalletProvider = require("truffle-hdwallet-provider");
-var mnemonic = "siege disagree message lake agree between walk confirm engage survey chicken become";
+const HDWalletProvider = require("truffle-hdwallet-provider");
+const mnemonic = "INVALID KEYWORDS";
 
 module.exports = {
   networks: {
@@ -10,7 +10,7 @@ module.exports = {
     },
     rinkeby: {
       provider: function () {
-        return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/a1412f8cdd3b480e89240786aed2eb1a");
+        return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/[NON_EXISTING]");
       },
       network_id: 4,
       gas: 6721975,

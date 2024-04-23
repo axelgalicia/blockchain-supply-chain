@@ -83,7 +83,7 @@ App = {
     },
 
     getMetaskAccountID: function () {
-        web3 = new Web3(App.web3Provider);
+        const web3 = new Web3(App.web3Provider);
 
         // Retrieving accounts
         web3.eth.getAccounts(function (err, res) {
@@ -99,12 +99,12 @@ App = {
 
     initSupplyChain: function () {
         /// Source the truffle compiled smart contracts
-        var jsonSupplyChain = '../../build/contracts/SupplyChain.json';
+        const jsonSupplyChain = '../../build/contracts/SupplyChain.json';
 
         /// JSONfy the smart contracts
         $.getJSON(jsonSupplyChain, function (data) {
             console.log('data', data);
-            var SupplyChainArtifact = data;
+            const SupplyChainArtifact = data;
             App.contracts.SupplyChain = TruffleContract(SupplyChainArtifact);
             App.contracts.SupplyChain.setProvider(App.web3Provider);
 
@@ -128,40 +128,32 @@ App = {
         App.readForm();
 
 
-        var processId = parseInt($(event.target).data('id'));
+        const processId = parseInt($(event.target).data('id'));
         console.log('processId', processId);
 
         switch (processId) {
             case 1:
                 return await App.harvestItem(event);
-                break;
             case 2:
                 return await App.processItem(event);
-                break;
             case 3:
                 return await App.packItem(event);
-                break;
             case 4:
                 return await App.sellItem(event);
-                break;
             case 5:
                 return await App.buyItem(event);
-                break;
             case 6:
                 return await App.shipItem(event);
-                break;
             case 7:
                 return await App.receiveItem(event);
-                break;
             case 8:
                 return await App.purchaseItem(event);
-                break;
             case 9:
                 return await App.fetchItemBufferOne(event);
-                break;
             case 10:
                 return await App.fetchItemBufferTwo(event);
-                break;
+            default:
+                return;
         }
     },
 
